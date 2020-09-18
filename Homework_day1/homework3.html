@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = [];
+        while(true)
+        {
+            let phuongThuc = prompt("Nhap vao phuong thuc(C/D/R/E):");
+            if(phuongThuc == "C")
+            {
+                let myElement = prompt("Nhap vao phan tu:");
+                myArray.push(myElement);
+            }
+            else if(phuongThuc == "D")
+            {
+                let index = 0;
+                for(let i = 0; i < myArray.length; i++)
+                {
+                    for(let j = 0; j < i; j++)
+                    {
+                        if(myArray[i] == myArray[j])
+                        {
+                            for(let k = i; k < myArray.length; k++)
+                            {
+                                myArray[k] = myArray[k+1];
+                                myArray.length--;
+                                i--;
+                            }
+                        }
+                    }
+                }
+            }
+            else if(phuongThuc == "R")
+            {
+                for(let i = 0; i < myArray.length; i++)
+                {
+                    console.log(myArray[i]);
+                }
+            }
+            else if(phuongThuc == "E")
+            {
+                break;
+            }
+            else 
+            {
+                console.log("Wrong input");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

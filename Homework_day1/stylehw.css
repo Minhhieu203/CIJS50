@@ -1,0 +1,77 @@
+body 
+{
+    background-color: #1abc9c;
+}
+    
+#bstop{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 70px 40px;
+    cursor: pointer;
+}
+#bslow{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 70px 40px;
+    cursor: pointer;
+}
+#bgo{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 70px 40px;
+    cursor: pointer;
+}
+#container1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+#light
+{
+    height: 550px;
+    width: 200px;
+    float: left;
+    background-color: #333;
+    border-radius: 40px;
+    margin: 30px 0;
+    padding: 20px;
+}
+#lstop
+{
+    height: 150px;
+    width: 150px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+#lslow
+{
+    height: 150px;
+    width: 150px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+#lgo
+{
+    height: 150px;
+    width: 150px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+
