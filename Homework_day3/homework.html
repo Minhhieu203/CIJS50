@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time = prompt("Nhập vào thời gian");
+        let hour = Number(time.substr(0, 2));
+        let minute = time.substr(2, 4);
+        let second = time.substr(6, 7);
+        if(hour == 12)
+        {
+            time = 0 + minute + second;
+        }
+        else if(hour < 12)
+        {
+            time = (hour + 12) + minute + second;
+            time = time.slice(0, 8);
+        }
+        console.log(time);
+    </script>
+</body>
+</html>
